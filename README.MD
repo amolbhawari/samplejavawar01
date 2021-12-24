@@ -96,6 +96,13 @@ F. Create Docker-compose.yml
 
 				container_name: jenkinstomcat01
 				
+		command to build: docker-compose up -d
+		
+		output:
+		http url: http://localhost:9998/sample/
+		https url: https://localhost:9999/sample/
+	
+		
 
 G. Create CICD using jenkins and build.	
 			
