@@ -12,7 +12,7 @@ A. Docker Installation
 
 
 
-B. Download and run Tomcat conatiner for sample.war
+B. Download and run Tomcat conatiner.
 
 	1) Download tomcat image
 			command	: docker pull tomcat:jdk8  (to pull tomcat image with jdk8)
@@ -54,6 +54,7 @@ C. Enabling self sign cert(SSL configuration)
 	4) exit the conatiner using exit command.
 
 D. Create a docker image using this container
+
 				commands :	docker container ls (to list docker containers)
 							docker commit a5d22e8ec795 amolbhawari/sampletomcatwar:latest  (to commit docker container and create docker image)
 							
@@ -101,7 +102,7 @@ G. Create CICD using jenkins and build.
 		git repo : https://github.com/amolbhawari/samplejavawar01
 		got to Github repo -> settings -> webhook
 		webhook url: http://ip-address-of-jenkins:8080/github-webhook/
-        add poll scm,. 15 * * * * 
+        add poll scm: 15 * * * * 
 		build using shell: docker-compose up -d
 		
 
