@@ -60,8 +60,8 @@ D. Create a docker image using this container
 							
 				*Create sample repository in dockerhub*
 				
-							docker push amolbhawari/sampletomcatwar:latest  (push the docker image to dockerhub)
-							command :	docker pull amolbhawari/sampletomcatwar:latest 	(to pull the above created image)
+				commands :	docker push amolbhawari/sampletomcatwar:latest  (push the docker image to dockerhub)
+				command :	docker pull amolbhawari/sampletomcatwar:latest 	(to pull the above created image)
 				
 E. 	Create Dockerfile
 
@@ -99,10 +99,10 @@ F. Create Docker-compose.yml
 
 G. Create CICD using jenkins and build.	
 			
-		git repo : https://github.com/amolbhawari/samplejavawar01
+		git repo	: https://github.com/amolbhawari/samplejavawar01
 		got to Github repo -> settings -> webhook
-		webhook url: http://ip-address-of-jenkins:8080/github-webhook/
-        add poll scm: 15 * * * * 
+		webhook url	: http://ip-address-of-jenkins:8080/github-webhook/
+			add poll scm  : 15 * * * * 
 		build using shell: docker-compose up -d
 		
 
