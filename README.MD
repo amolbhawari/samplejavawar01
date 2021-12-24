@@ -104,6 +104,11 @@ G. Create CICD using jenkins and build.
         add poll scm,. 15 * * * * 
 		build using shell: docker-compose up -d
 		
+
+H.  Browse the sample application.
+
+		http url: http://localhost:9998/sample/
+		https url: https://localhost:9999/sample/
 	
 
 	
