@@ -89,9 +89,12 @@ F. Create Docker-compose.yml
 				
 
 G. Create CICD using jenkins and build.				
+		git repo : https://github.com/amolbhawari/samplejavawar01
+		got to Github repo -> settings -> webhook
+		webhook url: http://ip-address-of-jenkins:8080/github-webhook/
+        add poll scm,. 15 * * * * 
+		build using shell: docker-compose up -d
 		
-
-			addffsssssssssss
 	
 
 	
