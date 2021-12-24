@@ -91,7 +91,7 @@ F. Create Docker-compose.yml
 G. Create CICD using jenkins and build.				
 		
 
-			adm
+			admsd
 	
 
 	
