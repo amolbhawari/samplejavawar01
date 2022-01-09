@@ -55,8 +55,8 @@ C. Enabling self sign cert(SSL configuration)
 
 D. Create a docker image using this container
 
-				commands :	docker container ls (to list docker containers)
-							docker commit a5d22e8ec795 amolbhawari/sampletomcatwar:latest  (to commit docker container and create docker image)
+				command :	docker container ls (to list docker containers)
+				command	:	docker commit a5d22e8ec795 amolbhawari/sampletomcatwar:latest  (to commit docker container and create docker image)
 							
 				*Create sample repository in dockerhub*
 				
@@ -77,7 +77,7 @@ F. Create Docker-compose.yml
 
 				version: "3.9"
 				services:
-				my-jenkins:
+					my-jenkins:
 				build:
 				context: .
 				dockerfile: Dockerfile
@@ -85,24 +85,15 @@ F. Create Docker-compose.yml
     
   
 				ports:
-					- "8888:8080"
-
-				ports:
-					- "9999:8443"
+				- "9998:8080"
+				- "9999:8443"
 
 				volumes:
-					- ./logs/:/usr/local/tomcat/logs
+				- ./logs/:/usr/local/tomcat/logs
 
 
-				container_name: jenkinstomcat01
+				container_name: jenkinstomcat02
 				
-		command to build: docker-compose up -d
-		
-		output:
-		http url: http://localhost:9998/sample/
-		https url: https://localhost:9999/sample/
-	
-		
 
 G. Create CICD using jenkins and build.	
 			
