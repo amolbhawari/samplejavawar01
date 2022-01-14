@@ -1,3 +1,4 @@
+Part 1- Running Locally
 
 A. Docker Installation
 
@@ -62,6 +63,8 @@ D. Create a docker image using this container
 				
 				commands :	docker push amolbhawari/sampletomcatwar:latest  (push the docker image to dockerhub)
 				command :	docker pull amolbhawari/sampletomcatwar:latest 	(to pull the above created image)
+
+Part 2- Running using CICD
 				
 E. 	Create Dockerfile
 
